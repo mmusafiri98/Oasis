@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Oasis/static/css/main.fac3e4d2.css",
+    "main.js": "/Oasis/static/js/main.d37259bc.js",
+    "static/js/453.2d5b185b.chunk.js": "/Oasis/static/js/453.2d5b185b.chunk.js",
+    "index.html": "/Oasis/index.html",
+    "main.fac3e4d2.css.map": "/Oasis/static/css/main.fac3e4d2.css.map",
+    "main.d37259bc.js.map": "/Oasis/static/js/main.d37259bc.js.map",
+    "453.2d5b185b.chunk.js.map": "/Oasis/static/js/453.2d5b185b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fac3e4d2.css",
+    "static/js/main.d37259bc.js"
+  ]
+}

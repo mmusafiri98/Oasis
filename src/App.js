@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
+import scrollreveal from 'scrollreveal';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import Services from './Components/Services';
+import Recommend from './Components/Recommend';
+import Testimonials from './Components/Testimonials';
+import Footer from './Components/Footer';
+import './App.css'; // Correction de l'import
+import RepublicaDominicanaPage from "./RepublicaDominicanaPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: 'top',
+      distance: '80px',
+      duration: 2000,
+      reset: true,
+    });
+
+    sr.reveal(
+      '#nav',  // Correct the selectors
+      '#hero',
+      '#services',
+      '#recommend',
+      '#testimonials',
+      'footer',
+      { interval: 300 }
+    );
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/Republica-DominicanaPage" element={<RepublicaDominicanaPage />} />
+
+          {/* Add other routes as needed */}
+        </Routes>
+      </Router>
+      <Services />
+      <Recommend />
+      <Testimonials />
+      <Footer />
+    </Main>
   );
 }
 
-export default App;
+const Main = styled.main`
+  // your styling here
+`;

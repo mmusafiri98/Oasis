@@ -89,6 +89,9 @@ const Navbar = () => {
               <Title>Île Maurice</Title>
               <Description>Les beautés divines d'une île paradisiaque</Description>
               <Price>À partir de 951€</Price>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre ile Maurice
+              </ActionButton>
             </CardText>
           </Card>
           <Card>
@@ -108,6 +111,9 @@ const Navbar = () => {
               <Title>Thaïlande</Title>
               <Description>Culture et nature en harmonie</Description>
               <Price>À partir de 832€</Price>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre la thailande
+              </ActionButton>
             </CardText>
           </Card>
           <Card>
@@ -116,6 +122,9 @@ const Navbar = () => {
               <Title>Égypte</Title>
               <Description>Découvrez l'histoire antique</Description>
               <Price>À partir de 476€</Price>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre l Égypte
+              </ActionButton>
             </CardText>
           </Card>
         </DestinationsGrid>
@@ -131,6 +140,9 @@ const Navbar = () => {
             <SalesText>
               <h4>Club Coralia Valeria Dar Atlas Marrakech 4*</h4>
               <p>3 jours / 2 nuits - tout inclus</p>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre le Club Coraila Valeria par Atlas Marrakech 4
+              </ActionButton>
               <SalesPrice>266€</SalesPrice>
             </SalesText>
           </SalesCard>
@@ -138,6 +150,9 @@ const Navbar = () => {
             <SalesImage src="francia.jpg" alt="France" />
             <SalesText>
               <h4>Croisière au fil du Nil By Club Coralia</h4>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre la Croisière au fil du Nil By CLub Coralia
+              </ActionButton>
               <p>8 jours / 7 nuits - pension complète hors boissons</p>
               <SalesPrice>791€</SalesPrice>
             </SalesText>
@@ -146,6 +161,9 @@ const Navbar = () => {
             <SalesImage src="America.jpg" alt="Amérique" />
             <SalesText>
               <h4>BAHIA PRINCIPE GRAND PUNTA CANA 5*</h4>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre la Bahia principe grand punta Cana 5
+              </ActionButton>
               <p>5 jours / 5 nuits - tout inclus</p>
               <SalesPrice>1065€</SalesPrice>
             </SalesText>
@@ -154,6 +172,9 @@ const Navbar = () => {
             <SalesImage src="versace.jpg" alt="Versace" />
             <SalesText>
               <h4>Kappa Club Waridi Beach Resort & Spa 4</h4>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre la Kappa Club waridi Beach Resort  & Spa 4
+              </ActionButton>
               <p>7 jours / 5 nuits - tout inclus</p>
               <SalesPrice>1179€</SalesPrice>
             </SalesText>

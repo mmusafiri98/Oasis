@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom"; // Si vous utilisez React Router
 
 const Navbar = () => {
+  const navigate = useNavigate(); // Hook pour la navigation
+
+  const handleDominicanRepublicClick = () => {
+    navigate("/RepublicaDominicanaPage"); // Redirige vers la page0
+  };
   return (
     <NavWrapper>
       {/* Barre promotionnelle */}
@@ -91,6 +97,9 @@ const Navbar = () => {
               <Title>République Dominicaine</Title>
               <Description>Vivez l'évasion avec nous</Description>
               <Price>À partir de 899€</Price>
+              <ActionButton onClick={handleDominicanRepublicClick}>
+                Découvre République Dominicaine
+              </ActionButton>
             </CardText>
           </Card>
           <Card>
